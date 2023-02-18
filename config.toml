@@ -1,4 +1,55 @@
 baseURL = 'https://gedai-dev.github.io/'
 languageCode = 'pt-BR'
-title = 'Gedai.DEV'
-theme="ananke"
+title = 'GEDAI.DEV'
+description = 'May the logs be with you!'
+author = 'Getulio'
+paginate="10"
+theme='m10c'
+
+[menu]
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+
+
+[params]
+  author = "GEDAI"
+  description = "May the logs be with you!"
+  avatar = "images/site/avatar-rounded.png"
+  favicon = "images/site/favicon.png"
+  
+  menu_item_separator = " | "
+  [[params.social]]
+    icon = "github"
+    name = "Github"
+    url = "https://github.com/gedai-dev"
+
+# Default theme
+#[params.style]
+#  darkestColor = "#242930"
+#  darkColor = "#353b43"
+#  lightColor = "#afbac4"
+#  lightestColor = "#ffffff"
+#  primaryColor = "#57cc8a"
+
+# Green theme
+#[params.style]
+#  darkestColor = "#315659"
+#  darkColor = "#253031"
+#  lightColor = "#96a879"
+#  lightestColor = "#fff"
+#  primaryColor = "#dad865"
+
+# Red theme
+#[params.style]
+#  darkestColor = "#d35050"
+#  darkColor = "#212121"
+#  lightColor = "#d6d6d6"
+#  lightestColor = "#d3d3d3"
+#  primaryColor = "#ffffff"
+
