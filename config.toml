@@ -1,0 +1,4 @@
+baseURL = 'https://gedai.github.io/'
+languageCode = 'pt-BR'
+title = 'Gedai'
+theme="ananke"
