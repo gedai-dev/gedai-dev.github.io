@@ -28,6 +28,10 @@ theme='m10c'
     icon = "github"
     name = "Github"
     url = "https://github.com/gedai-dev"
+  [[params.social]]
+    icon = "youtube"
+    name = "Youtube"
+    url = "https://www.youtube.com/channel/UCQj48Gj1HZkYgBebg3aJknw"
 
 # Default theme
 #[params.style]
