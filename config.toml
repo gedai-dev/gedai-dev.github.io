@@ -36,6 +36,10 @@ theme='m10c'
     icon = "youtube"
     name = "Youtube"
     url = "https://www.youtube.com/channel/UCQj48Gj1HZkYgBebg3aJknw"
+  [[params.social]]
+    icon = "instagram"
+    name = "Instagram"
+    url = "https://www.instagram.com/gedai.dev"
 
 # Default theme
 #[params.style]
