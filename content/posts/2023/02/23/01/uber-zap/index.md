@@ -14,7 +14,7 @@ tags: []
 
 >Se você tem dificuldade para entender o comportamento da sua aplicação em ambiente produtivo, e precisa depurar sua aplicação com frequência para tentar replicar um cenário que tenha ocorrido em produção, recomendo a leitura dos artigos abaixo para entender a importância dos pilares da observabilidade e como a adoção dessa prática irá te ajudar a obter um ambiente observável e monitorável.
 
-    -   [Observabilidade](#)
+    -   [Em breve]()
 
 
 # Escrevendo logs utilizando a biblioteca Zap da Uber
@@ -89,7 +89,7 @@ zapConfig := &zap.Config{
 	},
 }
 
-    // This Variable will be used to write logs stdout
+// This Variable will be used to write logs stdout
 var logger *zap.SugaredLogger
 
 _logger, err := zapConfig.Build(zap.AddCaller(), zap.AddCallerSkip(1))
