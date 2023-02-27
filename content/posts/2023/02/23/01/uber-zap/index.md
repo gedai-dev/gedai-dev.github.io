@@ -40,6 +40,19 @@ Siga os passos abaixo para ter sucesso na sua implementação:
 
 ```go
 
+// This constant values will be used in zap.Config bellow
+const (
+	timeKey          string = "Timestamp"
+	nameKey          string = "Key"
+	levelKey         string = "Severity"
+	encoding         string = "json"
+	CallerKey        string = "Caller"
+	messageKey       string = "Body"
+	outputPaths      string = "stdout"
+	stacktraceKey    string = "Trace"
+	errorOutputPaths string = "stderr"
+)
+
 zapConfig := &zap.Config{
 	Development: false,
 	Level:       zap.NewAtomicLevelAt(zap.InfoLevel),
