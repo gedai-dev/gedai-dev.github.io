@@ -40,51 +40,51 @@ Siga os passos abaixo para ter sucesso na sua implementação:
 
 ```go
 
-	zapConfig := &zap.Config{
-		Development: false,
-		Level:       zap.NewAtomicLevelAt(zap.InfoLevel),
-		Encoding:    encoding,
-		EncoderConfig: zapcore.EncoderConfig{
-			MessageKey:     messageKey,
-			LevelKey:       levelKey,
-			TimeKey:        timeKey,
-			NameKey:        nameKey,
-			CallerKey:      CallerKey,
-			FunctionKey:    zapcore.OmitKey,
-			StacktraceKey:  stacktraceKey,
-			SkipLineEnding: false,
-			LineEnding:     zapcore.DefaultLineEnding,
-			EncodeLevel:    zapcore.CapitalLevelEncoder,
-			EncodeTime:     zapcore.RFC3339TimeEncoder,
-			EncodeDuration: zapcore.MillisDurationEncoder,
-			EncodeCaller:   zapcore.ShortCallerEncoder,
-			EncodeName:     zapcore.FullNameEncoder,
+zapConfig := &zap.Config{
+	Development: false,
+	Level:       zap.NewAtomicLevelAt(zap.InfoLevel),
+	Encoding:    encoding,
+	EncoderConfig: zapcore.EncoderConfig{
+		MessageKey:     messageKey,
+		LevelKey:       levelKey,
+		TimeKey:        timeKey,
+		NameKey:        nameKey,
+		CallerKey:      CallerKey,
+		FunctionKey:    zapcore.OmitKey,
+		StacktraceKey:  stacktraceKey,
+		SkipLineEnding: false,
+		LineEnding:     zapcore.DefaultLineEnding,
+		EncodeLevel:    zapcore.CapitalLevelEncoder,
+		EncodeTime:     zapcore.RFC3339TimeEncoder,
+		EncodeDuration: zapcore.MillisDurationEncoder,
+		EncodeCaller:   zapcore.ShortCallerEncoder,
+		EncodeName:     zapcore.FullNameEncoder,
+	},
+	OutputPaths:      []string{outputPaths},
+	ErrorOutputPaths: []string{errorOutputPaths},
+	InitialFields: map[string]interface{}{
+		"Attributes": map[string]interface{}{
+			"service.name":    "gedai",
+			"service.version": "v1.0.0",
+			"time":            time.Now().UTC(),
 		},
-		OutputPaths:      []string{outputPaths},
-		ErrorOutputPaths: []string{errorOutputPaths},
-		InitialFields: map[string]interface{}{
-			"Attributes": map[string]interface{}{
-				"service.name":    "gedai",
-				"service.version": "v1.0.0",
-				"time":            time.Now().UTC(),
-			},
-			"Annotations": map[string]interface{}{
-				"team":     "team-gedai",
-				"contact":  "gedai-contact",
-				"handbook": "http://handbook.io",
-			},
+		"Annotations": map[string]interface{}{
+			"team":     "team-gedai",
+			"contact":  "gedai-contact",
+			"handbook": "http://handbook.io",
 		},
-	}
+	},
+}
 
     // This Variable will be used to write logs stdout
-	var logger *zap.SugaredLogger
+var logger *zap.SugaredLogger
 
-    _logger, err := zapConfig.Build(zap.AddCaller(), zap.AddCallerSkip(1))
-	if err != nil {
-		panic(err)
-	}
+_logger, err := zapConfig.Build(zap.AddCaller(), zap.AddCallerSkip(1))
+if err != nil {
+	panic(err)
+}
 
-	logger = _logger.Sugar()
+logger = _logger.Sugar()
 
 ```
 
@@ -93,11 +93,11 @@ Siga os passos abaixo para ter sucesso na sua implementação:
 ```go
 
 
-	logger.Info("Hi there! I`m a log kind of INFO ...")
+logger.Info("Hi there! I`m a log kind of INFO ...")
 
-	logger.Warn("Hey pay attention! I`m a log kind of WARN :o ...")
+logger.Warn("Hey pay attention! I`m a log kind of WARN :o ...")
 
-	logger.Error("OH NO! I`m a log kind of ERR :o ...")
+logger.Error("OH NO! I`m a log kind of ERR :o ...")
 
 ```
 
