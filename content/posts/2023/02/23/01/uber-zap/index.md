@@ -8,7 +8,6 @@ date: 2023-02-23T00:00:00-03:00
 author: Bruno Melo
 math: true
 tags: []
-draft: true
 ---
 
 # Implemente logs estruturados em sua apliçacão utilizando a biblioteza `zap` da Uber
@@ -112,5 +111,10 @@ Siga os passos abaixo para ter sucesso na sua implementação:
 ```
 
 Para visualizar este exemplo completo clique aqui: [gedai-dev/go-uber-zap-sample](https://github.com/gedai-dev/go-uber-zap-sample)
+
+
+### Observações do autor
+
+Eu faço uso desse pacote há muito tempo, e por mais que assunto pareça ser simples — e é — saiba que estruturar seus logs e padroniza-lo em todos os seus serviços pode parecer uma tarefa sem valor ou até mesmo chata e isso faz com que a informação que você necessita para entender o comportamento do seu sistema seja fraca e pobre de informação e isso não te ajudará em nada quando o teu chefe te ligar de madrugada para entender a mensagem do tipo "deu erro aqui, entrar em contato com o Kioto", então trate essa peça do seu sistema com a importância da camada de persistência, pois são os logs que irão te dizer o que ocorreu, quando ocorreu e o rastro de um determinado evento.
 
 
