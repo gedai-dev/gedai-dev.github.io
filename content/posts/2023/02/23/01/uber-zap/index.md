@@ -111,4 +111,6 @@ Siga os passos abaixo para ter sucesso na sua implementação:
 
 ```
 
+Para visualizar este exemplo completo clique aqui: [gedai-dev/go-uber-zap-sample](https://github.com/gedai-dev/go-uber-zap-sample)
+
 
