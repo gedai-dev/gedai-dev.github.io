@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Logs de aplicações NestJS"
-date: 2023-02-23T00:00:00-03:00
+date: 2023-03-12T00:00:00-03:00
 author: gm50x
 tags: [NestJS, Logging]
 ---
