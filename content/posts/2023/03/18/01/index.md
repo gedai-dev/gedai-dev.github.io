@@ -134,7 +134,7 @@ app.use((req, _res, next) => {
 });
 
 // montagem dos endpoints do app
-app.get("", (_req, res) => {
+app.get("", async (_req, res) => {
   log("got in");
 
   const data = await doSomethingAsynchronously()
