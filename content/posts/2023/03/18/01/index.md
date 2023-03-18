@@ -2,7 +2,9 @@
 layout: post
 title: "Passagem implícita de argumentos em NodeJS"
 date: 2023-03-18T00:00:00-03:00
-author: gm50x
+author:
+  name: Getúlio Magela Silva
+  url: "https://github.com/gm50x"
 tags: [NodeJS, AsyncLocalStorage]
 ---
 
@@ -122,7 +124,7 @@ const log = (message, severity = "INFO") => {
 function doSomethingAsynchronously() {
   log("doing something asynchronously now");
 
-  return 'All Good!'
+  return "All Good!";
 }
 
 // inclusão de middleware para executar nossos handlers com o storage associado.
@@ -137,7 +139,7 @@ app.use((req, _res, next) => {
 app.get("", async (_req, res) => {
   log("got in");
 
-  const data = await doSomethingAsynchronously()
+  const data = await doSomethingAsynchronously();
 
   res.send(data);
 });

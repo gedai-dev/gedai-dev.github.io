@@ -1,8 +1,9 @@
 ---
 title: "Boas Vindas!"
 date: 2023-02-22T10:00:00-03:00
-author: "gm50x"
-draft: false
+author:
+  name: Getúlio Magela Silva
+  url: "https://github.com/gm50x"
 tags: []
 ---
 

@@ -2,7 +2,9 @@
 layout: post
 title: "Logs de aplicações NestJS"
 date: 2023-03-12T00:00:00-03:00
-author: gm50x
+author:
+  name: Getúlio Magela Silva
+  url: "https://github.com/gm50x"
 tags: [NestJS, Logging]
 ---
 

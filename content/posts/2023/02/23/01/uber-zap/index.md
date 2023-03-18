@@ -5,9 +5,11 @@ categories: [Golang, bibliotecas]
 keywords: [uber-go/zap]
 pin: false
 date: 2023-02-23T00:00:00-03:00
-author: Bruno Melo
+author:
+  name: Bruno Melo
+  url: "https://github.com/brbarmex"
 math: true
-tags: []
+tags: [golang, loging]
 ---
 
 # Implemente logs estruturados em sua apliçacão utilizando a biblioteza `zap` da Uber
