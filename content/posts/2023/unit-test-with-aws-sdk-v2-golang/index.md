@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Golang: testes de unidade utilizando aws-sdk-v2"
+title: "Golang - Testes de unidade utilizando aws-sdk-v2"
 date: 2023-04-15T00:00:00-03:00
 author:
   name: Bruno Melo
