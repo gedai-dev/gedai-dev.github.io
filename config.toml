@@ -1,10 +1,12 @@
-baseURL = 'https://gedai-dev.github.io/'
+baseURL = ""
 languageCode = 'pt-BR'
 title = 'GEDAI.DEV'
 description = 'May the logs be with you!'
 author = 'GEDAI.DEV'
 paginate="10"
 theme='m10c'
+googleAnalytics = "G-CCML6GPW8C"
+
 
 [menu]
   [[menu.main]]
