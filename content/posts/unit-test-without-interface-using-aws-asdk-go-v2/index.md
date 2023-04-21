@@ -16,7 +16,7 @@ Mock é uma técnica na programação onde criamos estruturas para simular o com
 
 Há várias formas de gerar mocks para testes automatizados. Uma das maneiras mais comuns é utilizar objetos que implementem contratos de interfaces e substituir o comportamento desses objetos conforme a bateria de testes é executada. 
 
-Recomento a leitura deste [post](../unit-test-without-interface-using-aws-asdk-go-v2/) onde eu explico sobre como implementar testes de unidade utilizando interfaces para "mockar" comportamentos do [aws-sdk-go-v2]("https://github.com/aws/aws-sdk-go-v2").
+Recomento a leitura deste [post](../unit-test-without-interface-using-aws-asdk-go-v2/index) onde eu explico sobre como implementar testes de unidade utilizando interfaces para "mockar" comportamentos do [aws-sdk-go-v2]("https://github.com/aws/aws-sdk-go-v2").
 
 ## Show me the code!
 
@@ -91,8 +91,6 @@ func TestWithoutUseInterface(t *testing.T){
 ```
 
 ## Considerações
-
-Aqui está uma possível reformulação do texto:
 
 Este é um exemplo simples que pode ser usado como alternativa ao uso de interfaces. Não há nada de errado em utilizar interfaces, mas se você as utiliza apenas para facilitar seus testes, essa abordagem pode ajudar a preservar o design.
 
