@@ -70,7 +70,7 @@ func TestWithoutUseInterface(t *testing.T){
     cfg, _ := config.LoadDefaultConfig(ctx,
         config.WithRegion("sa-east-1"),
         config.WithAPIOptions([]func(*middleware.Stack) error{
-        receiveMessageMock("abc", outputExpected, nil) // <-- A MAGICA ACONTECE AQUI
+          receiveMessageMock("abc", outputExpected, nil) // <-- A MAGICA ACONTECE AQUI
         }), 
     )
 
